@@ -1,10 +1,18 @@
-import { View, Text } from 'react-native';
 import React from 'react';
+import { useTheme, Text, Layout } from '@ui-kitten/components';
 
 export const RegisterScreen = () => {
+  const theme = useTheme();
   return (
-    <View>
-      <Text>RegisterScreen</Text>
-    </View>
+    <Layout
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: theme['color-primary-600'],
+      }}
+    >
+      <Text category="h1">Register</Text>
+    </Layout>
   );
 };
