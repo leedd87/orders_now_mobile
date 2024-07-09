@@ -17,8 +17,8 @@ export const RegisterScreen = () => {
     >
       <Text category="h1">REGISTER</Text>
       <Layout style={{ gap: 15, padding: 10 }}>
-        <Input placeholder="name" autoCapitalize="none" secureTextEntry />
-        <Input placeholder="surname" autoCapitalize="none" secureTextEntry />
+        <Input placeholder="name" autoCapitalize="none" />
+        <Input placeholder="surname" autoCapitalize="none" />
         <Input placeholder="email" autoCapitalize="none" />
         <Input placeholder="password" autoCapitalize="none" secureTextEntry />
         <Input
@@ -29,7 +29,7 @@ export const RegisterScreen = () => {
 
         <Button onPress={() => console.log('Register')}>Register</Button>
         <Layout style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
-          <Text category="p1">Has account?</Text>
+          <Text category="p1">Have account?</Text>
           <Text
             category="p1"
             style={{ textDecorationLine: 'underline' }}
