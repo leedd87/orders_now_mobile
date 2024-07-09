@@ -43,5 +43,14 @@
   "color-danger-600": "#D8241D",
   "color-danger-700": "#B5141A",
   "color-danger-800": "#920C1C",
-  "color-danger-900": "#78071E"
+  "color-danger-900": "#78071E",
+
+  "background-basic-color-1": "#DB0114", 
+  "background-basic-color-2": "#B70120",
+
+
+  "border-basic-color-1": "#930026",
+  "border-basic-color-2": "#7A002A"
+
+
 }
