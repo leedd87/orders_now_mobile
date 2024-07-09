@@ -1,20 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider } from '@ui-kitten/components';
 import { HomeScreen } from './src/screens/Home/HomeScreen';
+import { default as theme } from './src/theme/theme.json'; // <-- Import app theme
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <HomeScreen />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default () => (
+  <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
+    <HomeScreen />
+  </ApplicationProvider>
+);

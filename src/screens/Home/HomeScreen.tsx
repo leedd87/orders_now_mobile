@@ -1,10 +1,18 @@
-import { View, Text } from 'react-native';
 import React from 'react';
+import { Layout, Text, useTheme } from '@ui-kitten/components';
 
 export const HomeScreen = () => {
+  const theme = useTheme();
   return (
-    <View>
-      <Text>HomeScreen</Text>
-    </View>
+    <Layout
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: theme['color-primary-600'],
+      }}
+    >
+      <Text category="h1">HOME</Text>
+    </Layout>
   );
 };
